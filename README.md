@@ -84,4 +84,4 @@ fastapi-blog-api/
 ## 📞 Contato
 
 Cleyton - [cleyton.p2025@gmail.com](mailto:cleyton.p2025@gmail.com)
-telefonr: +55 81 9 98863-4396
+telefone: +55 81 9 98863-4396
