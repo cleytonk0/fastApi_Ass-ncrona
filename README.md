@@ -31,21 +31,6 @@ Esta API permite criar, ler, atualizar e excluir posts de blog, com sistema de a
 - **Migrações**: Alembic
 
 
-## 🏃‍♂️ Como Usar
-
-1. **Inicie o servidor**:
-
-   ```bash
-   poetry run uvicorn src.main:app --reload
-   ```
-
-2. **Acesse a documentação**:
-
-   - Swagger UI: http://127.0.0.1:8000/docs
-   - ReDoc: http://127.0.0.1:8000/redoc
-
-3. **API Base URL**: http://127.0.0.1:8000
-
 ## 📚 Endpoints da API
 
 ### Autenticação
