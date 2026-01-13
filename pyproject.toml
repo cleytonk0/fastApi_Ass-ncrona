@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "fastapi-assycrona"
+version = "0.1.0"
+description = "FastAPI project"
+authors = ["Cleyt <cleyt@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0"
+databases = {extras = ["aiomysql"], version = "^0.9.0"}
+pymysql = "^1.1.0"
+pyjwt = "^2.10.1"
+pydantic-settings="*"
+alembic = "*"
+aiosqlite = "^0.22.1"
+
+[tool.poetry.group.dev.dependencies]
+# Atualizado para v9.0 para compatibilidade com o pytest-asyncio moderno
+pytest = "^9.0.0" 
+pytest-asyncio = "^1.3.0"
+httpx = "^0.28.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
